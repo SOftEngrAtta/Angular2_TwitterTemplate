@@ -1,5 +1,6 @@
 .glyphicon-heart{
     color:lightgray;
+    cursor:pointer
 }
 
 .activeLiked{
