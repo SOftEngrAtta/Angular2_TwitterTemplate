@@ -1,0 +1,12 @@
+<div class="media" *ngFor="let image of imageArray" [style.padding.%]='2'>
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" [src]="image.image_path" alt="..." [style.border-radius.px]='6'>
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" [textContent]="image.name"></h4><span [textContent]="image.twitt_email" [style.color]='lightgray'></span>
+    <br>
+    <app-liked [totalLikes]="image.totalCount" [iLike]="image.iLike"></app-liked>
+  </div>
+</div>
